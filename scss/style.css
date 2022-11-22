@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
+.main_header {
+  border-top: 0.5rem solid salmon;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.main_header .main_header-logo_wrepper img {
+  width: 4rem;
+}
+.main_header .main_header-main_nav .main-heade-main-nav-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2rem;
+}
+.main_header .main_header-main_nav .main-heade-main-nav-list a {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */
