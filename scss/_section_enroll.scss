@@ -19,13 +19,30 @@
         
 
     }
+   
     .enroll_form{
+       
+     .input_holder{
         margin: auto;
         width: 20%;
         padding: 10px;
         display: flex;
         flex-direction: column;
-
+        @include  xl {
+            
+            width: 26%;
+        }
+        @include lg{
+            width: 30%;
+        }
+        @include  md {
+            
+            width: 37%;
+        }
+        @include  sm {
+            
+            width: 49%;
+        }
         label{
          
             color:$color;
@@ -70,10 +87,10 @@
 }
 
         input , select{
-            margin-bottom: 1rem;
+            
             border:2px solid  $color;
             box-shadow: 2px 2px 2px 2px rgb(181, 131, 131); 
-           
+           margin-bottom: 0.5rem;
             height: 1.8rem;
         }
         
@@ -88,19 +105,20 @@
         }
       
     }
-    .sum{
-        padding: 0.5rem;
+}
+    .sum{  padding: 0.5rem;
    #sumbit{
     display: flex;
     margin:0px auto;
     border-color: black;
-    padding: 0.8rem;
+    padding: 1.5rem;
     border-radius: 12px;
     background-color: sandybrown;
     cursor: pointer;
     margin-bottom: 1rem;
+    box-shadow: none;
    }
 }
 }
-
 }
+

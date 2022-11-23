@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./scss/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
     <header class="main_header">
@@ -31,7 +32,10 @@
         <div class="enroll_wrapper">
 
             <h3 class="enroll_text">Enroll for one of our courses</h3>
+            
+               
             <form class="enroll_form" action="/action_page.php">
+                <div class="input_holder">
                 <label  id="name" for="fname"></label>
                 <input type="text" id="fname" name="fname">
                 <label id="sname" for="lname"></label>
@@ -44,15 +48,34 @@
                 </select>
                 <label id="addt" for="text"></label>
                 <textarea id="text"></textarea>
-               
-                </form>
+            </div>
+                
                 <div class="sum">
-                <input id="sumbit" type="submit" value="Submit">
+                    <input id="sumbit" type="submit" value="Submit">
                 </div>
+            </form>
+              
+               
                
         </div>
      
     </section>
-    <footer></footer>
+    <footer class="main_footer">
+        <nav class="main-footer__nav">
+            <section class="main-footer__nav-social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </section>
+            <ul class="main-footer__nav-list">
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
     </body>
 </html>

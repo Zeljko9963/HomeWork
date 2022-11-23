@@ -4,6 +4,11 @@ $brakepoints:(
     "lg":992px,
     "xl":1200px,
 );
+@mixin sm {
+    @media (max-width: map-get($brakepoints, "sm")){
+        @content;
+    }
+}
 @mixin md {
     @media (max-width: map-get($brakepoints, "md")){
         @content;
