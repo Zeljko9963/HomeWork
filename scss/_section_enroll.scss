@@ -1,0 +1,106 @@
+.enroll{
+   
+    background-image:url(../img/enrollment-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    .enroll_wrapper{
+       
+    .enroll_text{
+        text-align: center;
+        padding: 1.5rem 1.5rem;
+        font-family: $font;
+        color:$color;
+         text-shadow: 1.5px 1.5px  #000000;
+        font-weight: bold;
+       
+        word-spacing: 0.5rem;
+        
+
+    }
+    .enroll_form{
+        margin: auto;
+        width: 20%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        label{
+         
+            color:$color;
+            text-shadow: 1px 1px  #000000;
+            font-weight: bold;
+            margin-bottom:5px;
+            font-size: 13px;
+          
+        
+
+          
+        }
+        
+#name::before{
+          
+            content: "* First name";
+            border-bottom: 1px solid red ;
+        
+       }
+#sname::before{
+          
+        content: "* Last name:";
+        border-bottom: 1px solid red ;
+    
+  } 
+#email::before{
+          
+    content: "* Email:";
+    border-bottom: 1px solid red ;
+
+}
+#chose::before{
+    content:"Choose a course:";
+    border-bottom: 1px solid red ;
+
+}
+
+#addt::before{
+    content:"Additional messege:";
+    border-bottom: 1px solid red ;
+
+}
+
+        input , select{
+            margin-bottom: 1rem;
+            border:2px solid  $color;
+            box-shadow: 2px 2px 2px 2px rgb(181, 131, 131); 
+           
+            height: 1.8rem;
+        }
+        
+            
+        
+        textarea{
+            height: 8rem;
+            margin-bottom: 1rem;
+            border:2px solid $color;
+            box-shadow: 2px 2px 2px 2px rgb(181, 131, 131); 
+            resize: none;
+        }
+      
+    }
+    .sum{
+        padding: 0.5rem;
+   #sumbit{
+    display: flex;
+    margin:0px auto;
+    border-color: black;
+    padding: 0.8rem;
+    border-radius: 12px;
+    background-color: sandybrown;
+    cursor: pointer;
+    margin-bottom: 1rem;
+   }
+}
+}
+
+}

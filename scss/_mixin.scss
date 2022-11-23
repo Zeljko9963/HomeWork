@@ -1,0 +1,15 @@
+@mixin md {
+    @media (max-width: map-get($brakepoints, "md")){
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width: map-get($brakepoints, "lg")){
+        @content;
+    }
+}
+@mixin xl {
+    @media (max-width: map-get($brakepoints, "xl")){
+        @content;
+    }
+}

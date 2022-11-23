@@ -1,0 +1,21 @@
+$brakepoints:(
+    "sm":580px,
+    "md":768px,
+    "lg":992px,
+    "xl":1200px,
+);
+@mixin md {
+    @media (max-width: map-get($brakepoints, "md")){
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width: map-get($brakepoints, "lg")){
+        @content;
+    }
+}
+@mixin xl {
+    @media (max-width: map-get($brakepoints, "xl")){
+        @content;
+    }
+}
